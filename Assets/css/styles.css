@@ -1,0 +1,383 @@
+/* Reset Browser */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*code tai su dung*/
+.container {
+    width: 80%;
+/*can phan tu ra giưa*/
+margin: auto;
+
+}
+
+
+
+/*headder main.start*/
+
+.header-top {
+    width: 100%;
+    height: 30px;
+    background-color: #F7f7f7;
+    display: flex;
+    justify-content: center; /*căn giưa chieu ngang*/
+    align-items: center; /*căn giưa chieu ngang*/
+position: relative;
+/*phan tu tuyet doi - mat troi*/
+}
+
+
+
+.header-top a {
+    color: black;
+/*bo gach chan*/
+font-size: 10px;
+
+text-decoration: none;
+/*viet hoa*/
+text-transform: uppercase;
+
+}
+
+.header-menu-first {
+ 
+    height: 65px;
+ 
+}
+
+.menu-main-first {
+    display: flex;
+    height: 65px;
+    /*sử dụng flex box căn chiều ngang*/
+    align-items: center;
+ 
+}
+
+.menu-main-first:hover a {
+    color: chocolate;
+}
+
+
+.menu-main-first li {
+    /*ẩn dấu chấm trước phần tử li*/
+    list-style: none;
+    margin-right: 12px;
+    white-space: nowrap;
+   
+}
+.menu-main-first li a {
+     /*bỏ gạch chân*/
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+    
+}
+
+
+.gif-container {
+    text-align: center; 
+}
+
+.gif-container img {
+    width: 100%; 
+    height: auto; 
+}
+
+
+ /*header bottom*/
+ .header-bottom {
+    width: 100%;
+ }
+
+
+ .header-bottom-logo {
+    width: 20%;
+    height: 75px;
+ display: flex;
+ align-items: center;
+ }
+
+
+ .wrap-header-bottom {
+    display: flex;
+ }
+
+ .header-bottom-search {
+    width: 50%;
+    height: 75px;
+
+ }
+
+ .header-bottom-search {
+   
+    display: flex;
+    align-items: center;
+    
+}
+
+
+.header-bottom-search input {
+    width: 100%;
+    padding: 10px;
+   
+    background-color: #eff0f5;
+}
+
+
+
+.header-bottom-search button {
+    padding: 12px 10px;
+    background-color: orange;
+    border: 0.5px solid #ccc;
+    cursor: pointer;
+}
+
+
+
+ .header-menu-button {
+    width: 10%;
+    height: 75px;
+   margin-top: 25px;
+    align-items: center;
+ }
+
+.header-menu-button i {
+font-size: 30px;
+margin-left: 30px;
+color: #000;
+
+}
+
+
+ .header-bottom-logo-last {
+    width: 20%;
+    height: 75px;
+ 
+    display: flex;
+    align-items: center;
+ }
+
+ /*P2 - menu lazada*/
+
+ body {
+    font-family: "Roboto", sans-serif;
+
+}
+
+.container-mid {
+    width: 80%;
+  
+/*can phan tu ra giưa*/
+margin: auto;
+display: flex;
+position: relative;
+}
+
+
+.menu-lazada {
+    position: absolute;
+    top: 24%; 
+    left: 10%; /* Đặt vị trí ngang ở giữa ảnh */
+    transform: translate(-50%, -50%); /* Để căn giữa chính xác */
+    text-align: center;
+    color: gray; /* Màu chữ */
+    z-index: 1; /* Đặt lớp chồng của phần text để nằm trên ảnh */
+}
+
+a {
+    text-decoration: none;
+    color: #757575;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+.menu {
+    background-color: #fff;
+    position: relative;
+}
+
+.menu-item {
+    width: 200px;
+    /* position: relative; */
+}
+
+.menu-item p {
+    padding-left: 8px;
+    padding-right: 8px;
+    height: 37px;
+    line-height: 27px;
+    text-decoration: none;
+    font-size: 13px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-item p .icon {
+    display: none;
+}
+
+.menu-item:hover > p,
+.menu-item:hover > p a {
+    color: chocolate;
+}
+
+.menu-item:hover > p .icon,
+.menu-item:hover > p .icon {
+    display: inline-block;
+    color: chocolate;
+}
+
+.sub-menu {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    background-color: white;
+    display: none;
+    height: auto;
+}
+
+
+
+.menu-item:hover .sub-menu {
+    display: block;
+}
+
+/* thử nghiệm */
+
+.sub-menu:hover .sub-menu-in {
+    display: block;
+}
+
+.sub-menu-in {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    background-color: white;
+    display: none;
+    height: auto;
+}
+
+.sub-menu:hover .sub-menu-in-1 {
+    display: block;
+}
+
+.sub-menu-in-1 {
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    background-color: white;
+    display: none;
+    height: auto;
+}
+
+.footer {
+    background-color: pink;
+    width: 100%;
+}
+
+
+.pink-block {
+   
+    padding: 2%;
+    text-align: center;
+}
+
+.pink-block img {
+    max-width: 100%; 
+    height: auto;
+    border-radius: 8px; 
+}
+
+.register-button {
+    background-color: white; 
+    color: black; 
+    padding: 10px 100px; 
+    font-size: 16px; 
+    border: 1; 
+    border-radius: 20px; 
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: white;
+}
+
+.register-button img {
+    position: absolute; 
+    left: 10px; 
+    top: 97.5%; 
+    transform: translateY(-50%); 
+}
+
+.register-discount {
+    background-color: white; 
+    color: black; 
+    padding: 10px 100px; 
+    font-size: 16px; 
+    border: 1; 
+    border-radius: 20px; 
+    cursor: pointer;
+}
+
+.register-discount:hover {
+    background-color: white;
+}
+
+.register-discount img {
+    position: absolute; 
+    left: 270px; 
+    top: 97.5%; 
+    transform: translateY(-50%); 
+}
+
+.register-recharge-card {
+    background-color: white; 
+    color: black; 
+    padding: 10px 100px; 
+    font-size: 16px; 
+    border: 1; 
+    border-radius: 20px; 
+    cursor: pointer;
+}
+
+.register-recharge-card:hover {
+    background-color: white;
+}
+
+.register-recharge-card img {
+    position: absolute; 
+    left: 570px; 
+    top: 97.5%; 
+    transform: translateY(-50%); 
+}
+
+.register-global {
+    background-color: white; 
+    color: black; 
+    padding: 10px 100px; 
+    font-size: 16px; 
+    border: 1; 
+    border-radius: 20px; 
+    cursor: pointer;
+}
+
+.register-global:hover {
+    background-color: white;
+}
+
+.register-global img {
+    position: absolute; 
+    left: 930px; 
+    top: 97.5%; 
+    transform: translateY(-50%); 
+}
